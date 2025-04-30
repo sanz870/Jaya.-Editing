@@ -1,0 +1,23 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    background: linear-gradient(90deg, #f7c600 60%, #fff 40%);
+    flex-wrap: wrap;
+}
+
+/* Media query di bawah agar menimpa aturan di atas saat layar kecil */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
